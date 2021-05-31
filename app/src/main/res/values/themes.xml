@@ -5,10 +5,10 @@
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
-
-
     </style>
 
-
+    <style name="SplashScreen" parent="Theme.Cartelera">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
 
 </resources>

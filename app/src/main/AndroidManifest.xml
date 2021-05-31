@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cartelera">
         <activity android:name=".Detail"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
