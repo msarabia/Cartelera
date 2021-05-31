@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="info"
+            type="com.msarabia.cartelera.data.models.MediaInfo" />
+        <variable
+            name="imgSize"
+            type="String" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                app:imageSize="@{imgSize}"
+                app:loadImage="@{info.getBackDrop}"
+                tools:background="#EBEBEB"
+                tools:layout_height="400dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+            <TextView
+                style="@style/text.title.main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{info.getTitle}"
+                tools:text="Titulo de la pelicula"/>
+
+            <TextView
+                android:id="@+id/overview"
+                style="@style/text.general"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@{info.overview}"
+                tools:text="Titulo de la pelicula"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

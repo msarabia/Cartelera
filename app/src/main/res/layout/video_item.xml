@@ -3,12 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!--    <data>-->
-    <!--        <variable-->
-    <!--            name="data"-->
-    <!--            type="" />-->
-    <!--    </data>-->
-
+        <data>
+            <variable
+                name="data"
+                type="com.msarabia.cartelera.data.models.MediaInfo" />
+            <variable
+                name="imageSize"
+                type="String" />
+        </data>
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
@@ -24,7 +26,8 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            loadImage="algo"
+            app:imageSize="@{imageSize}"
+            app:loadImage="@{data.getPosterPath}"
             tools:src="@drawable/mock" />
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -32,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center"
             android:layout_marginBottom="4dp"
-            android:text="aaaaaaa" />
+            android:text="" />
 
     </androidx.cardview.widget.CardView>
 

@@ -7,4 +7,13 @@
     <dimen name="appBarElevation">4dp</dimen>
 
 
+<!--    Text-->
+    <dimen name="text_general_size">16dp</dimen>
+    <dimen name="text_title_size">18dp</dimen>
+    <dimen name="text_main_title_size">26dp</dimen>
+
+    <dimen name="text_button_size">16dp</dimen>
+    <dimen name="text_info_size">14dp</dimen>
+    <dimen name="text_footer_size">16dp</dimen>
+
 </resources>

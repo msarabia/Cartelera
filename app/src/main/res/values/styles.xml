@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="text">
+        <item name="android:textSize">@dimen/text_general_size</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="text.general">
+        <item name="android:textSize">@dimen/text_general_size</item>
+    </style>
+
+    <style name="text.general.bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text.title">
+        <item name="android:textSize">@dimen/text_title_size</item>
+    </style>
+
+    <style name="text.title.bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text.title.main">
+        <item name="android:textSize">@dimen/text_main_title_size</item>
+    </style>
+
+    <style name="text.title.main.bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

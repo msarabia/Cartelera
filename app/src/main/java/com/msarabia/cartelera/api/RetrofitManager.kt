@@ -48,6 +48,7 @@ object RetrofitManager {
 
         retrofit = Retrofit.Builder()
             .baseUrl(BASE_URL)
+            .client(okHttpClientBuilder.build())
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
